@@ -13,7 +13,6 @@ perl /home/ivergara/tools/coovar-0.07/coovar.pl -e /home/ivergara/reference/Homo
 
 perl /home/ivergara/tools/coovar-0.07/coovar.pl -e /home/ivergara/reference/Homo_sapiens.GRCh37.75.mainChrom.gtf -r /home/ivergara/human_g1k_v37_mainChrom.fasta -t DATA/CALLS/SK-G_SRR2159465.coovar -o SK-G_SRR2159465_OUT --circos
 
-Expected CooVar output can be found within the OUTPUT folder. 
 
 2) Create folders for patient
 -----------------------------
@@ -41,7 +40,7 @@ perl generate-epitope-sequence.pl SK-G_SRR2159465_OUT/categorized-gvs.gvf SK-G_S
 perl remove-redundancy.pl EPITOPES_17/SK-G
 perl remove-redundancy.pl EPITOPES_REF_17/SK-G 
 
-Expected content within folders EPITOPES_17 and EPITOPES_REF_17 can be found in OUTPUT folder.
+Expected content within folders EPITOPES_17 and EPITOPES_REF_17 can be found within OUTPUT.
 
 
 5) Run netMHC on mutated and wildtype peptides
@@ -62,6 +61,6 @@ perl parse-netMHC-classI-output.pl EPITOPES_REF_17/SK-G/I_input_netMHC_noRedunda
 
 perl build-matrix-epitopes-netmhc.pl SK-G 17 > SK-G_neoepitopes_matrix_17.txt
 
-The expected final output file can be found in the OUTPUT folder.
+The expected final output file can be found within OUTPUT.
 
 
